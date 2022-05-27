@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Sample</title>
+    <link rel="stylesheet" href="style1.css">
+    </link>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/newNoticeLogo.png"></a>
+        <!-- <a href="#" class="logo">Food<span>.</span></a> -->
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Join our Network</a></li>
+        </ul>
+    </header>
+
+    <!--****HOME SECTION HERE****-->
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Volunteering made easy<span>.</span></h2>
+            <p>Lend a hand locally with Notice Volunteer: A mobile app that matches people to the volunteer
+                opportunities they are passionate about with local nonprofit organizations that need their time,
+                contributions, and skills.
+            </p>
+            <a href="#contact" class="btn">JOIN OUR NETWORK</a>
+        </div>
+    </section>
+
+    <!--****ABOUT SECTION HERE****-->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50 marginEd">
+                <h2 class=" largeText">DISCOVER</h2>
+                <p>Upcoming volunteer opportunities near you.</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="images/discover.png">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col50">
+                <div class="imgBx leftMargin">
+                    <img src="images/trackProgress.png">
+                </div>
+            </div>
+            <div class="col50">
+                <h2 class="largeText">TRACK YOUR JOURNEY</h2>
+                <p>With your list of upcoming tasks, and verified list of past activity.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col50 marginEd">
+                <h2 class="largeText">EXPLORE</h2>
+                <p>Local organizations and the impactful work they do.</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="images/explore.png">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col50">
+                <div class="imgBx leftMargin">
+                    <img src="images/keepOrganized.png">
+                </div>
+            </div>
+            <div class="col50">
+                <h2 class="largeText">KEEP ORGANIZED</h2>
+                <p>Draft, post, and keep track of volunteers, tasks, and your public profile as a non-profit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--****TESIMONIAL SECTION HERE****-->
+    <section class="testimonials" id="testimonials">
+        <div class="title white">
+            <h2 class="titleText">Our Team</h2>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="text">
+                    <h3>Manasa Bala</h3>
+                    <p>CEO, Principle Software Developer</p>
+                    <p>manasab.notice@gmail.com</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <h3>Karissa Gu</h3>
+                    <p>President, Marketing, UX Design</p>
+                    <p>karissag.notice@gmail.com</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <h3>Astrid Mejia Ordonez</h3>
+                    <p>Lead Outreach Coordinator</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <h3>Robyn Wu</h3>
+                    <p>Junior Software Developer</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="text">
+                    <h3>Soumya Boutin</h3>
+                    <p>Outreach Coordinator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--****CONTACT SECTION HERE****-->
+    <section class="contact" id="contact">
+        <div class="title white apply-para">
+            <h2 class="titleText">Non-profit Application</h2>
+            <p>Apply to join the Notice community! We ask that non-profit organizations interested in using our
+                networking service fill out the following application to ensure the safety of all of our
+                volunteers.
+            </p>
+            <!-- <div class="download"> -->
+            <a href="Application for notice .pdf" download="Application for notice .pdf" class="btn">
+                <h9>Download Application PDF</h9>
+            </a>
+
+            <!-- </div> -->
+
+        </div>
+    </section>
+    <!--****CONTACT SECTION HERE****-->
+    <section class="footer" id="footer">
+        <div class="footerContainer">
+            <h2 class="footerTitle">Contact Us</h2>
+            <p>generalcontact.notice@gmail.com</p>
+
+        </div>
+    </section>
+
+
+    <!--Animates the banner w/ scroll-->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+
+    </script>
+</body>
+
+</html>

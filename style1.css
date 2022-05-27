@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p
+{
+    font-weight: 300;
+    color:#111
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/landingBackground.png);
+    background-size: cover;
+}
+.banner .content
+{
+    max-width: 900px;
+    text-align: start;
+}
+.banner .content  h2
+{
+    font-size: 5em;
+    color: #fff;
+}
+.banner .content p
+{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+}
+.banner .content  h2 span
+{
+    color: #ff3838;
+}
+.btn
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff3838;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover
+{
+    letter-spacing: 6px;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: #36393e;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo img
+{
+    /* color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none; */
+    margin-top: 10px;
+    width: 100px;
+}
+header.sticky .logo
+{
+    width: 100px;
+}
+header .logo span
+{
+    color: #ff3838;
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+header.sticky .navigation li a
+{
+    color: #fff;
+}
+header .navigation li a:hover
+{
+    color: #ff3838;
+}
+section
+{
+    padding: 100px;
+}
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 700px;
+    align-items: center;
+}
+.row .col50
+{
+    /* position: relative; */
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+}
+.titleText
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span
+{
+    color: #ff3838;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.row .col50 .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.row .marginEd
+{
+    margin-right: 400px;
+    margin-left: 100px;
+
+}
+.row .col50 .imgBx img
+{
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    width: 250px;
+    height: 550px;
+    border-radius: 15px;
+    /* object-fit: cover; */
+}
+.largeText {
+    color: #ff3838;
+    font-size: 70px;
+    font-weight: 300;
+}
+.col50 p {
+    font-size: 30px; 
+    color: #fff;
+}
+.leftMargin {
+    margin-left: 100px;
+    /* margin-right: 400px; */
+
+}
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box
+{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.menu .content .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text
+{
+    padding: 15px 0 5px;
+}
+.menu .content .box .text h3
+{
+    font-weight: 400;
+    color: #111;
+}
+.expert .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.expert .content .box
+{
+    width: 250px;
+    margin: 15px;
+}
+.expert .content .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.expert .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.expert .content .box .text
+{
+    padding: 15px 0 5px;
+    
+}
+
+#about {
+    background: #36393e;
+    align-items: center;
+    justify-content: center;
+}
+.expert .content .box .text h3
+{
+    font-weight: 400;
+    color: #111;
+}
+.testimonials
+{
+    background: #36393e;
+    background-size: cover;
+}
+.white .titleText,
+.white p
+{
+    color: #ff3838;
+    font-size: 50px;
+}
+.testimonials .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+.testimonials .content .box
+{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonials .content .box .imgBx
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonials .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonials .content .box .text
+{
+    text-align: center;
+}
+.testimonials .content .box .text p
+{
+    color: #666;
+    font-style: italic;
+}
+.testimonials .content .box .text h3
+{
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #ff3838;
+    font-weight: 500;
+}
+.contact
+{
+    background: #36393e ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactForm
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 75px 50px;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    width: 50%;
+    height: 100%;
+    margin-top: 50px;
+}
+.contactForm h3
+{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input
+{
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
+    width: 100%;
+    height: 2rem;
+    border: none;
+    padding-left: 10px;
+}
+.contactForm .inputBox input[type="submit"]
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff3838;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+textarea
+{
+    padding-left: 10px;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 1rem;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
+    width: 100%;
+    height: 5rem;
+    resize: none;
+    border: none;
+}
+.apply-para p{
+    font-size: 20px;
+    color: #fff;
+}
+@media (max-width: 991px)
+{
+    header, header.sticky
+    {
+        padding: 10px 20px;
+    }
+}
+.title {
+    margin-bottom: 30px;
+    text-align: left;
+    align-items: center;
+    width: 100%;
+}
+.titleText {
+    color: black;
+    font-size: 40px;
+}
+.title p {
+  margin-top: 10px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+.download {
+    font-size: 1em;
+    color: #fff;
+    background: #ff3838;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 1px;
+    width: 135px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.download a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+
+    width: 200px;
+    height: 35px;
+
+}
+.footer { 
+    background: rgb(41, 43, 46);
+    height: 300px;
+}
+.footer .footerContainer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 0;
+}
+.footer .footerContainer h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+.footer .footerContainer p{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
